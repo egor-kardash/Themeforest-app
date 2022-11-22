@@ -1,5 +1,6 @@
 {
   "name": "themeforest-app",
+  "homepage": "http://Fritterus.github.io/themeforest-app",
   "version": "0.1.0",
   "author": "Egor Kardash",
   "private": true,
@@ -19,6 +20,7 @@
     "@types/react-router-dom": "^5.3.3",
     "@types/uuid": "^8.3.4",
     "formik": "^2.2.9",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-animate-height": "^3.0.5",
     "react-dom": "^18.2.0",
@@ -37,7 +39,8 @@
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,json} --config ./.prettierrc",
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
