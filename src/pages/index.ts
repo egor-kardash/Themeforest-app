@@ -1,0 +1,12 @@
+export { AboutUs } from '@/pages/AboutUs';
+export { Blog } from '@/pages/Blog';
+export { Home } from '@/pages/Home';
+export { Services } from '@/pages/Services';
+export { FAQs } from '@/pages/FAQs';
+export { Contacts } from '@/pages/Contacts';
+export { OurTeam } from '@/pages/OurTeam';
+export { Solutions } from '@/pages/Solutions';
+export { SingleService } from '@/pages/SingleService';
+export { SingleSolution } from '@/pages/SingleSolution';
+export { SingleOurTeam } from '@/pages/SingleOurTeam';
+export { SingleBlog } from '@/pages/SingleBlog';
