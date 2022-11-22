@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import InfiniteScroll from 'react-infinite-scroll-component';
 import { v4 as getId } from 'uuid';
 
 import { memberList } from '@/constants/ourTeamPageData';
