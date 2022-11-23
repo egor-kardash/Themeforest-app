@@ -5,7 +5,7 @@ import theme from '@/theme';
 
 export const BreadcrumbContainer = styled.div`
   max-width: 1141px;
-  margin: 20px auto 56px auto;
+  margin: 25px auto;
   padding: 0 16px;
   display: flex;
   flex-flow: row wrap;

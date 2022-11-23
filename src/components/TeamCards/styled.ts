@@ -8,9 +8,14 @@ export const TeamCardsContainer = styled.section`
   margin: 0 auto;
   height: auto;
   display: grid;
+  /* grid-template-columns: auto auto auto; */
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 500px;
   gap: 30px;
   margin-top: 240px;
-  margin-bottom: 120px;
+  margin-bottom: calc(50px + 70 * (100vw / 1920));
+
+  @media (max-width: 768px) {
+    margin-bottom: calc(50px + (70 + 70 * 0.7) * ((100vw - 360px) / 1920));
+  }
 `;

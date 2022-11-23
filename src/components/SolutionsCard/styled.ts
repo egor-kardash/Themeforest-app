@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-import '@fontsource/open-sans';
-import arrowRight from '@/assets/icons/arrow-right.svg';
 import theme from '@/theme';
-
-import { Link } from 'react-router-dom';
 
 export const SolutionsCardContainer = styled.div`
   width: 100%;
@@ -53,34 +49,5 @@ export const SolutionsCardContainer = styled.div`
 
   @media (max-width: 480px) {
     padding: 25px 20px;
-  }
-`;
-
-export const ReadMoreLink = styled(Link)`
-  text-decoration: none;
-  width: 94px;
-  margin: auto 0 0 0;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  color: ${theme.colors.primary};
-
-  &::after {
-    content: '';
-    display: block;
-    background-color: ${theme.colors.primary};
-    mask: url('${arrowRight}') center;
-    width: 20px;
-    height: 100%;
-    float: right;
-  }
-
-  &:hover::after {
-    background-color: ${theme.colors.black};
-  }
-
-  &:hover {
-    cursor: pointer;
-    color: ${theme.colors.black};
   }
 `;

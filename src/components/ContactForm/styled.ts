@@ -117,6 +117,8 @@ export const SendButton = styled.button`
 
   &:hover {
     cursor: pointer;
+
+    box-shadow: 0px 12px 30px rgba(24, 92, 255, 0.18);
   }
 
   @media (max-width: 768px) {

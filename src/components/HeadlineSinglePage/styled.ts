@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import theme from '@/theme';
 
 export const HeadlineContainer = styled.section`
-  height: 250px;
+  height: 15vw;
+  min-height: 200px;
   padding: 0 16px;
   display: flex;
   flex-flow: column wrap;

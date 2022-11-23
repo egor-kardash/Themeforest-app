@@ -5,8 +5,7 @@ import theme from '@/theme';
 export const WhoWeAreContainer = styled.section`
   max-width: 1141px;
   padding: 0 16px;
-  margin: 0 auto;
-  margin-bottom: 120px;
+  margin: 0 auto calc(50px + 70 * (100vw / 1920));
   display: flex;
   flex-flow: row nowrap;
   gap: 30px;
@@ -26,15 +25,29 @@ export const TextWrapper = styled.div`
 
   h1 {
     font-weight: 800;
-    font-size: 46px;
-    line-height: 60px;
+    font-size: calc(30px + 16 * (100vw / 1920));
+    line-height: calc(40px + 20 * (100vw / 1920));
     color: ${theme.colors.black};
   }
 
   p {
     font-family: 'Open Sans';
-    font-size: 20px;
-    line-height: 33px;
+    font-size: calc(14px + 6 * (100vw / 1920));
+    line-height: calc(24px + 9 * (100vw / 1920));
     color: ${theme.colors.grey};
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: calc(50px + (70 + 70 * 0.7) * ((100vw - 360px) / 1920));
+
+    h1 {
+      font-size: calc(30px + (16 + 16 * 0.7) * ((100vw - 360px) / 1920));
+      line-height: calc(40px + (20 + 20 * 0.7) * ((100vw - 360px) / 1920));
+    }
+
+    p {
+      font-size: calc(14px + (6 + 6 * 0.7) * ((100vw - 360px) / 1920));
+      line-height: calc(24px + (9 + 9 * 0.7) * ((100vw - 360px) / 1920));
+    }
   }
 `;

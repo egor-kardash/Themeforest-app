@@ -9,6 +9,7 @@ import {
   DiscoverMoreButton,
   FeaturesContainer,
   FirstBlock,
+  ImageWrapper,
   SecondBlock,
   SecondBlockHeadline,
   TextButtonWrapper,
@@ -32,7 +33,10 @@ export const Features = () => {
         </DiscoverMoreButton>
       </FirstBlock>
       <SecondBlock>
-        <img src={features2Image} />
+        <ImageWrapper>
+          <img src={features2Image} />
+        </ImageWrapper>
+        
         {/* <SecondBlockHeadline> */}
         <h2>Radically new solutions for data</h2>
         <TextButtonWrapper>

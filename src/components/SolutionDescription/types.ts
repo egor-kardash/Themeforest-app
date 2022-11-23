@@ -3,6 +3,7 @@ export type SolutionDescriptionProps = {
     id: string;
     title: string;
     image?: string;
+    typeList?: string[];
     description: string;
   }[];
 };

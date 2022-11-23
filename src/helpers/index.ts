@@ -1,3 +1,6 @@
+import { blogCardList } from '@/constants/blogPageData';
+import { IPostCard } from '@/types';
+
 export const parsePathName = (pathName: string) => {
   const pathNames = pathName
     .split('/')
@@ -11,4 +14,22 @@ export const parsePathName = (pathName: string) => {
     }, []);
 
   return pathNames;
+};
+
+export const getAnnualPrice = (price: number) => {
+  const discountPercent = 0.7;
+  const monthsPerYear = 12;
+
+  return Math.ceil(price * monthsPerYear * discountPercent);
+};
+
+export const getRelatedPosts = (post: IPostCard) => {
+  const relatedPosts = blogCardList
+    .filter(
+      (item) =>
+        item.id !== post.id && post.tags.some((e) => item.tags.includes(e)),
+    )
+    .slice(0, 3);
+
+  return relatedPosts;
 };

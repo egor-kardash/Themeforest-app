@@ -8,28 +8,28 @@ export const BlogCardsContainer = styled.section`
   margin: 0 auto calc(50px + 70 * (100vw / 1920));
 
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   gap: 40px;
 
   @media (max-width: 768px) {
+    max-width: 540px;
     margin-bottom: calc(50px + (70 + 70 * 0.7) * ((100vw - 360px) / 1920));
   }
 `;
 
 export const BlogList = styled.div`
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 
   @media (max-width: 768px) {
-    grid-template-columns: auto;
-    justify-content: center;
+    grid-template-columns: 1fr;
   }
 `;
 
 export const SeeMoreButton = styled.button`
   border: none;
-  max-width: 460px;
+  max-width: 540px;
   width: 100%;
   align-self: center;
   height: 54px;

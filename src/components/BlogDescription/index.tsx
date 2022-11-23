@@ -4,22 +4,19 @@ import { SearchBar } from '../SearchBar';
 import { BlogDescriptionContainer, SideBar, TagsBar } from './styled';
 import { BlogDescriptionProps } from './types';
 import { v4 as getId } from 'uuid';
+import { PopularPosts } from '../PopularPosts';
+import { useMediaQuery } from 'react-responsive';
+import { IPostCard } from '@/types';
 
-export const BlogDescription = ({
-  image,
-  author,
-  date,
-  viewsAmount,
-  tags,
-  text,
-}: BlogDescriptionProps) => {
-  const aritcleProps = { image, author, date, viewsAmount, tags, text };
+export const BlogDescription = (post: IPostCard) => {
+  const isLaptopOrTablet = useMediaQuery({ query: '(max-width: 1024px)' })
 
   return (
     <BlogDescriptionContainer>
-      <Article {...aritcleProps} />
+      <Article {...post} />
       <SideBar>
-        <SearchBar />
+        {!isLaptopOrTablet && <SearchBar />}
+        <PopularPosts />
         <TagsBar>
           <h4>Tags</h4>
           <div>

@@ -49,9 +49,16 @@ export const TextWrapper = styled.div`
     color: ${theme.colors.grey};
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 940px) {
+    flex-flow: column wrap;
     gap: 20px;
 
+    p {
+      max-width: 540px;
+    }
+  }
+
+  @media (max-width: 768px) {
     h1 {
       letter-spacing: -1.5px;
       font-size: calc(30px + (16 + 16 * 0.7) * ((100vw - 320px) / 1920));

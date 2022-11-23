@@ -1,51 +1,35 @@
 import React from 'react';
-
-import { Navigation } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import { blogList } from '@/constants/blogCardData';
-
 import { ControlsDirection } from '../ControlsDirection';
-import { HeaderBlogCard } from '../HeaderBlogCard';
-import { BlogSectionContainer, TittleControllerWrapper } from './styled';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { BlogSectionContainer, LearnMoreButton, TittleControllerWrapper } from './styled';
+import { useMediaQuery } from 'react-responsive';
+import { BlogCardSwiper } from '../BlogCardSwiper';
+import { v4 as getId } from 'uuid';
+import { blogCardList } from '@/constants/blogPageData';
+import { PopularPostCard } from '../PopularPostCard';
+import { Paths } from '@/constants';
 
 export const BlogSection = () => {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
   return (
     <BlogSectionContainer>
-      <TittleControllerWrapper>
-        <h2>Our blog</h2>
-        <ControlsDirection />
-      </TittleControllerWrapper>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        grabCursor={true}
-        navigation={{
-          nextEl: '.button-next',
-          prevEl: '.button-prev',
-        }}
-        modules={[Navigation]}
-        breakpoints={{
-          '560': {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          '1140': {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        }}
-      >
-        {blogList.map((item, i) => (
-          <SwiperSlide key={i}>
-            <HeaderBlogCard {...item} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {!isTabletOrMobile ? (
+        <>
+          <TittleControllerWrapper>
+            <h2>Our blog</h2>
+            <ControlsDirection />
+          </TittleControllerWrapper>
+          <BlogCardSwiper />
+        </>
+      ) : (
+        <>
+          <h2>Our blog</h2>
+          {blogCardList.slice(0, 3).map((post) => (
+            <PopularPostCard key={getId()} {...post} />
+          ))}
+          <LearnMoreButton to={Paths.Blog} />
+        </>
+      )}
     </BlogSectionContainer>
   );
 };

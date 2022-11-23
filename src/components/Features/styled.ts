@@ -32,13 +32,13 @@ export const FirstBlock = styled.div`
   margin-bottom: calc(50px + 70 * (100vw / 1920));
   display: grid;
   grid-template:
-    'a b'
-    'a c' / 1fr 1fr;
+    'title description'
+    'title button' / 1fr 1fr;
 
   gap: 30px;
 
   & > h1 {
-    grid-area: a;
+    grid-area: title;
     font-weight: 800;
     font-size: calc(30px + 27 * (100vw / 1920));
     line-height: calc(40px + 16 * (100vw / 1920));
@@ -50,20 +50,20 @@ export const FirstBlock = styled.div`
   }
 
   & > p {
-    grid-area: b;
+    grid-area: description;
     margin-top: 10px;
   }
 
   & > a {
-    grid-area: c;
+    grid-area: button;
   }
 
   @media (max-width: 768px) {
     margin-bottom: calc(50px + (70 + 70 * 0.7) * ((100vw - 320px) / 1920));
     grid-template:
-      'a'
-      'b'
-      'c';
+      'title'
+      'description'
+      'button';
     gap: 20px;
     justify-items: center;
 
@@ -89,45 +89,25 @@ export const SecondBlock = styled.div`
   height: auto;
   display: grid;
   grid-template:
-    'a b' auto
-    'a c' auto / 50% 35%;
+    'image title' auto
+    'image description' auto / 50% 35%;
   gap: 30px;
 
   background: ${theme.colors.background};
 
-  & > img {
-    grid-area: a;
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* & > Link {
-    grid-area: c;
-  } */
-
-  & > div {
-    grid-area: c;
-  }
-
   & > h2 {
+    grid-area: title;
     align-self: flex-end;
-    grid-area: b;
   }
 
   @media (max-width: 1024px) {
     padding: calc(50px + 70 * (100vw / 1920)) 0;
     justify-items: center;
     grid-template:
-      'b b'
-      'a a'
-      'c c';
+      'title title'
+      'image image'
+      'description description';
     row-gap: 20px;
-
-    img {
-      width: 100%;
-      /* height: 200px; */
-      aspect-ratio: 2;
-    }
 
     p {
       max-width: 840px;
@@ -138,8 +118,7 @@ export const SecondBlock = styled.div`
       width: 100%;
     }
 
-    h2,
-    div {
+    h2 {
       padding: 0 16px;
     }
   }
@@ -150,12 +129,13 @@ export const SecondBlock = styled.div`
 `;
 
 export const TextButtonWrapper = styled.div`
-  grid-area: c;
+  grid-area: description;
   display: flex;
   flex-flow: column wrap;
   gap: 30px;
 
   @media (max-width: 1024px) {
+    padding: 0 16px;
     gap: 20px;
     align-items: center;
   }
@@ -188,5 +168,26 @@ export const DiscoverMoreButton = styled(Link)`
     cursor: pointer;
     background: ${theme.colors.lightBlue};
     box-shadow: 0px 12px 30px rgba(24, 92, 255, 0.18);
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  grid-area: image;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 80%;
+
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+  }
+
+  @media (max-width: 1024px) {
+    padding-top: calc(100% * (100 / 200));
   }
 `;

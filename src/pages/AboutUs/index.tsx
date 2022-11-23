@@ -8,15 +8,12 @@ import { Subscribe } from '@/components/Subscribe';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { WhoWeAre } from '@/components/WhoWeAre';
 
-import { HeadlineWrapper } from './styled';
+import { HeadlineSinglePage } from '@/components/HeadlineSinglePage';
 
 export const AboutUs = () => {
   return (
     <>
-      <HeadlineWrapper>
-        <h1>About us</h1>
-        <Breadcrumb />
-      </HeadlineWrapper>
+      <HeadlineSinglePage title='About us'/>
       <WhoWeAre />
       <OurMission />
       <CompanyOverview />

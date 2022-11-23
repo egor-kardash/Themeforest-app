@@ -18,6 +18,7 @@ export const BlogCardContainer = styled(Link)`
   &:hover,
   &:active {
     color: inherit;
+    text-decoration: none;
   }
 `;
 

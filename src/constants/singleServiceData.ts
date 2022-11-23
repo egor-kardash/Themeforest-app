@@ -1,5 +1,15 @@
-import accessControlCustomerImage from '@/assets/images/access-control-customer-image.png';
-import accessControlSolutionImage from '@/assets/images/access-control-solution-image.png';
+import serviceCustomerImage1 from '@/assets/images/service/service-customer-image-1.jpg';
+import serviceCustomerImage2 from '@/assets/images/service/service-customer-image-2.jpg';
+import serviceCustomerImage3 from '@/assets/images/service/service-customer-image-3.jpg';
+import serviceCustomerImage4 from '@/assets/images/service/service-customer-image-4.jpg';
+import serviceCustomerImage5 from '@/assets/images/service/service-customer-image-5.jpg';
+import serviceCustomerImage6 from '@/assets/images/service/service-customer-image-6.jpg';
+import serviceSolutionImage1 from '@/assets/images/service/service-solution-image-1.jpg';
+import serviceSolutionImage2 from '@/assets/images/service/service-solution-image-2.jpg';
+import serviceSolutionImage3 from '@/assets/images/service/service-solution-image-3.jpg';
+import serviceSolutionImage4 from '@/assets/images/service/service-solution-image-4.jpg';
+import serviceSolutionImage5 from '@/assets/images/service/service-solution-image-5.jpg';
+import serviceSolutionImage6 from '@/assets/images/service/service-solution-image-6.jpg';
 
 export const singleServiceData = [
   {
@@ -9,7 +19,7 @@ export const singleServiceData = [
       {
         id: 'customer',
         title: 'Customer',
-        image: accessControlCustomerImage,
+        image: serviceCustomerImage1,
         description: `Vestibulum varius mattis sagittis. Cras pharetra rutrum ante. Pellentesque pulvinar, odio ut convallis lobortis, massa ante mattis neque, a sagittis orci leo in quam. Ut convallis ex orci, nec sodales urna convallis ac. Sed cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu.
         `,
       },
@@ -23,7 +33,7 @@ export const singleServiceData = [
       {
         id: 'solution',
         title: 'Solution',
-        image: accessControlSolutionImage,
+        image: serviceSolutionImage1,
         solutions: [
           'Hid mobile access',
           'Location services',
@@ -56,7 +66,7 @@ export const singleServiceData = [
       {
         id: 'customer',
         title: 'Customer',
-        image: accessControlCustomerImage,
+        image: serviceCustomerImage2,
         description: `Vestibulum varius mattis sagittis. Cras pharetra rutrum ante. Pellentesque pulvinar, odio ut convallis lobortis, massa ante mattis neque, a sagittis orci leo in quam. Ut convallis ex orci, nec sodales urna convallis ac. Sed cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu.
         `,
       },
@@ -70,7 +80,7 @@ export const singleServiceData = [
       {
         id: 'solution',
         title: 'Solution',
-        image: accessControlSolutionImage,
+        image: serviceSolutionImage2,
         solutions: [
           'Hid mobile access',
           'Location services',
@@ -103,7 +113,7 @@ export const singleServiceData = [
       {
         id: 'customer',
         title: 'Customer',
-        image: accessControlCustomerImage,
+        image: serviceCustomerImage3,
         description: `Vestibulum varius mattis sagittis. Cras pharetra rutrum ante. Pellentesque pulvinar, odio ut convallis lobortis, massa ante mattis neque, a sagittis orci leo in quam. Ut convallis ex orci, nec sodales urna convallis ac. Sed cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu.
         `,
       },
@@ -117,7 +127,7 @@ export const singleServiceData = [
       {
         id: 'solution',
         title: 'Solution',
-        image: accessControlSolutionImage,
+        image: serviceSolutionImage3,
         solutions: [
           'Hid mobile access',
           'Location services',
@@ -150,7 +160,7 @@ export const singleServiceData = [
       {
         id: 'customer',
         title: 'Customer',
-        image: accessControlCustomerImage,
+        image: serviceCustomerImage4,
         description: `Vestibulum varius mattis sagittis. Cras pharetra rutrum ante. Pellentesque pulvinar, odio ut convallis lobortis, massa ante mattis neque, a sagittis orci leo in quam. Ut convallis ex orci, nec sodales urna convallis ac. Sed cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu.
         `,
       },
@@ -164,7 +174,7 @@ export const singleServiceData = [
       {
         id: 'solution',
         title: 'Solution',
-        image: accessControlSolutionImage,
+        image: serviceSolutionImage4,
         solutions: [
           'Hid mobile access',
           'Location services',
@@ -197,7 +207,7 @@ export const singleServiceData = [
       {
         id: 'customer',
         title: 'Customer',
-        image: accessControlCustomerImage,
+        image: serviceCustomerImage5,
         description: `Vestibulum varius mattis sagittis. Cras pharetra rutrum ante. Pellentesque pulvinar, odio ut convallis lobortis, massa ante mattis neque, a sagittis orci leo in quam. Ut convallis ex orci, nec sodales urna convallis ac. Sed cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu.
         `,
       },
@@ -211,7 +221,7 @@ export const singleServiceData = [
       {
         id: 'solution',
         title: 'Solution',
-        image: accessControlSolutionImage,
+        image: serviceSolutionImage5,
         solutions: [
           'Hid mobile access',
           'Location services',
@@ -244,7 +254,7 @@ export const singleServiceData = [
       {
         id: 'customer',
         title: 'Customer',
-        image: accessControlCustomerImage,
+        image: serviceCustomerImage6,
         description: `Vestibulum varius mattis sagittis. Cras pharetra rutrum ante. Pellentesque pulvinar, odio ut convallis lobortis, massa ante mattis neque, a sagittis orci leo in quam. Ut convallis ex orci, nec sodales urna convallis ac. Sed cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu.
         `,
       },
@@ -258,7 +268,7 @@ export const singleServiceData = [
       {
         id: 'solution',
         title: 'Solution',
-        image: accessControlSolutionImage,
+        image: serviceSolutionImage6,
         solutions: [
           'Hid mobile access',
           'Location services',

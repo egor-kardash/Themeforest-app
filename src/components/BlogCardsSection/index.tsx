@@ -34,7 +34,7 @@ export const BlogCardsSection = () => {
     setTimeout(() => {
       const uploadedArticles = blogCardList.slice(
         articles.length,
-        articles.length + 2,
+        articles.length + 4,
       );
 
       setArticles([...articles, ...uploadedArticles]);

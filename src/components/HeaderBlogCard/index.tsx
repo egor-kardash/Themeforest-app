@@ -2,25 +2,30 @@ import React from 'react';
 
 import { Paths } from '@/constants';
 
-import { HeaderBlogCardContainer, ReadMoreLink, TextWrapper } from './styled';
+import { HeaderBlogCardContainer, ImageWrapper, TextWrapper } from './styled';
 import { HeaderBlogCardProps } from './types';
+import { ReadMoreLink } from '../ReadMoreLink';
 
 export const HeaderBlogCard = ({
   id,
   image,
   date,
-  tittle,
-  description,
+  title,
+  previewText,
 }: HeaderBlogCardProps) => {
+  const fullPath = `${Paths.Blog}/${id}`;
+
   return (
     <HeaderBlogCardContainer>
-      <img src={image} />
+      <ImageWrapper>
+        <img src={image} alt='Blog image' title='Blog image' />
+      </ImageWrapper>
       <TextWrapper>
         <h6>{date}</h6>
-        <h4>{tittle}</h4>
-        <p>{description}</p>
+        <h4>{title}</h4>
+        <p>{previewText}</p>
       </TextWrapper>
-      <ReadMoreLink to={`${Paths.Blog}/${id}`}>Read more</ReadMoreLink>
+      <ReadMoreLink path={fullPath} />
     </HeaderBlogCardContainer>
   );
 };

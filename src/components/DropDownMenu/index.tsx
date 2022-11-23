@@ -15,9 +15,6 @@ import {
   MobileDropDownList,
 } from './styled';
 
-
-
-
 export const DropDownMenu = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
   const [isOpen, setIsOpen] = useToggle();

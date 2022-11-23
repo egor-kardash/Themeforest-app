@@ -20,6 +20,10 @@ export const TestimonialsContainer = styled.section`
   @media (max-width: 768px) {
     margin-bottom: calc(50px + (70 + 70 * 0.7) * ((100vw - 360px) / 1920));
   }
+
+  @media (max-width: 640px) {
+    max-width: 420px;
+  }
 `;
 
 export const TittleControllerWrapper = styled.div`

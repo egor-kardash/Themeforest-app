@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import arrowRight from '@/assets/icons/arrow-right.svg';
 import theme from '@/theme';
 
 export const HeaderBlogCardContainer = styled.div`
@@ -9,11 +8,6 @@ export const HeaderBlogCardContainer = styled.div`
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 `;
 
 export const TextWrapper = styled.div`
@@ -44,31 +38,19 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const ReadMoreLink = styled(Link)`
-  text-decoration: none;
-  width: 94px;
-  margin: auto 0 0 0;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  color: ${theme.colors.primary};
+export const ImageWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: calc(100% * (100 / 160));
 
-  &::after {
-    content: 'a';
-    display: block;
-    background-color: ${theme.colors.primary};
-    mask: url('${arrowRight}') center;
-    width: 20px;
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
     height: 100%;
-    float: right;
-  }
-
-  &:hover::after {
-    background-color: ${theme.colors.black};
-  }
-
-  &:hover {
-    cursor: pointer;
-    color: ${theme.colors.black};
+    object-fit: cover;
+    border-radius: 6px;
   }
 `;
+

@@ -23,15 +23,57 @@ export const PricingCardContainer = styled.div`
     margin-bottom: -14px;
   }
 
-  p {
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 40px;
-    color: ${theme.colors.black};
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    &::before {
-      content: '$';
-      float: left;
+    p {
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 40px;
+      color: ${theme.colors.black};
+
+      &::before {
+        content: '$';
+        float: left;
+      }
+    }
+  }
+`;
+
+export const PriceToggler = styled.div<{ isActive: boolean }>`
+  display: flex;
+  gap: 10px;
+
+  button {
+    width: 41px;
+    height: 32px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+
+    padding: 4px 10px;
+    border: 1px solid ${theme.colors.primary};
+    border-radius: 6px;
+    pointer-events: ${({ isActive }) => (isActive ? 'none' : 'unset')};
+
+    background: ${({ isActive }) =>
+      isActive ? `${theme.colors.primary}` : `${theme.colors.white}`};
+    color: ${({ isActive }) =>
+      isActive ? `${theme.colors.white}` : `${theme.colors.primary}`};
+
+    &:nth-child(1) {
+      pointer-events: ${({ isActive }) => (isActive ? 'unset' : 'none')};
+      background: ${({ isActive }) =>
+        isActive ? `${theme.colors.white}` : `${theme.colors.primary}`};
+      color: ${({ isActive }) =>
+        isActive ? `${theme.colors.primary}` : `${theme.colors.white}`};
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 `;

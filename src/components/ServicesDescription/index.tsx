@@ -35,13 +35,13 @@ export const ServicesDescription = ({ content }: ServicesDescriptionProps) => {
                 </SolutionList>
               )}
               {item.image && (
-                // <ImageWrapper>
-                <img
-                  src={item.image}
-                  alt='Paragraph image'
-                  title={`${item.title} image`}
-                />
-                // </ImageWrapper>
+                <ImageWrapper>
+                  <img
+                    src={item.image}
+                    alt='Paragraph image'
+                    title={`${item.title} image`}
+                  />
+                </ImageWrapper>
               )}
             </ContentItem>
           );

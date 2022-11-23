@@ -1,7 +1,21 @@
-import blogImage1 from '@/assets/images/blog-1-image.png';
-import blogImage2 from '@/assets/images/blog-2-image.png';
-import blogImage3 from '@/assets/images/blog-3-image.png';
-import blogImage4 from '@/assets/images/blog-4-image.png';
+import blogImage1 from '@/assets/images/blog/blog-image-1.jpg';
+import blogImage2 from '@/assets/images/blog/blog-image-2.jpg';
+import blogImage3 from '@/assets/images/blog/blog-image-3.jpg';
+import blogImage4 from '@/assets/images/blog/blog-image-4.jpg';
+import blogImage5 from '@/assets/images/blog/blog-image-5.jpg';
+import blogImage6 from '@/assets/images/blog/blog-image-6.jpg';
+import blogImage7 from '@/assets/images/blog/blog-image-7.jpg';
+import blogImage8 from '@/assets/images/blog/blog-image-8.jpg';
+import blogImage9 from '@/assets/images/blog/blog-image-9.jpg';
+import blogImage10 from '@/assets/images/blog/blog-image-10.jpg';
+import blogImage11 from '@/assets/images/blog/blog-image-11.jpg';
+import blogImage12 from '@/assets/images/blog/blog-image-12.jpg';
+import blogImage13 from '@/assets/images/blog/blog-image-13.jpg';
+import blogImage14 from '@/assets/images/blog/blog-image-14.jpg';
+import blogImage15 from '@/assets/images/blog/blog-image-15.jpg';
+import blogImage16 from '@/assets/images/blog/blog-image-16.jpg';
+import blogImage17 from '@/assets/images/blog/blog-image-17.jpg';
+import blogImage18 from '@/assets/images/blog/blog-image-18.jpg';
 
 export const allTags = [
   'All topics',
@@ -20,149 +34,232 @@ export const allTags = [
   'Proxy',
 ];
 
+export const blogCardPreviewText =
+  'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...';
+export const blogCardText = [
+  `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Nulla rhoncus consectetur eros non iaculis “Vivamus lectus enim, convallis nec dapibus vel, semper id ante. Morbi pulvinar sapien nulla, eu dignissim enim ullamcorper vitae”. 
+\nUt sit amet neque vel mauris consequat aliquam at in arcu. Ut vulputate, augue luctus dignissim pretium, elit magna placerat elit, at venenatis lacus arcu eget quam. Fusce nec cursus mi, sed blandit. 
+\nPhasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliq uam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. Praesent mollis velit ac accumsan ultrices. Ut convallis ipsum pulvinar ante maximus suscipit.`,
+  `“Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero”`,
+  `Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, eu euismod augue bibendum. In volutpat libero velit, et mattis tortor placerat eget.
+\nUt nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Sed placerat, ligula vel tempor pellentesque, odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam. `,
+];
+
 export const blogCardList = [
   {
-    id: 'staffing-software-1',
+    id: 'computer-affordable',
     image: blogImage1,
-    date: '22 June 2022',
-    title: 'Staffing software: key capabilities and top products',
-    tags: ['App', 'CIO', 'Future'],
+    date: '12 August 2021',
+    title: 'How to make computer more affordable',
+    tags: ['App', 'Media', 'Future'],
     author: 'Bertha Palacios',
     viewsAmount: 481,
     category: 'Software development',
-    text: [
-      `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Nulla rhoncus consectetur eros non iaculis “Vivamus lectus enim, convallis nec dapibus vel, semper id ante. Morbi pulvinar sapien nulla, eu dignissim enim ullamcorper vitae”. 
-    \nUt sit amet neque vel mauris consequat aliquam at in arcu. Ut vulputate, augue luctus dignissim pretium, elit magna placerat elit, at venenatis lacus arcu eget quam. Fusce nec cursus mi, sed blandit. 
-    \nPhasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliq uam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. Praesent mollis velit ac accumsan ultrices. Ut convallis ipsum pulvinar ante maximus suscipit.`,
-      `“Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero”`,
-      `Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, eu euismod augue bibendum. In volutpat libero velit, et mattis tortor placerat eget.
-  \nUt nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Sed placerat, ligula vel tempor pellentesque, odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam. `,
-    ],
+    previewText: blogCardPreviewText,
+    text: blogCardText,
   },
   {
-    id: 'staffing-software-2',
+    id: 'mistakes-programming',
     image: blogImage2,
-    date: '22 June 2022',
+    date: '23 October 2022',
+    title: '10 common mistakes with programming',
+    tags: ['App', 'Management', 'Media'],
+    author: 'Randall Harrison',
+    viewsAmount: 378,
+    category: 'Information security',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: 'programming-and-you',
+    image: blogImage5,
+    date: '26 April 2022',
+    title: '10 signs programming is not for you',
+    tags: ['App', 'CIO', 'Future'],
+    author: 'Lance Piggott',
+    viewsAmount: 296,
+    category: 'Software development',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: 'computer-and-laptop',
+    image: blogImage3,
+    date: '10 September 2022',
+    title: 'Computer vs Laptop: which should you choose?',
+    tags: ['CMR', 'CIO'],
+    author: 'Sharon Perez',
+    viewsAmount: 3729,
+    category: 'Digital transformation',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: 'best-solutions',
+    image: blogImage4,
+    date: '17 May 2021',
+    title: 'What are the best solutions on the market?',
+    tags: ['Data analytics', 'CIO', 'Data'],
+    author: 'Mary Koster',
+    viewsAmount: 1004,
+    category: 'Healthcare it',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: 'React-benefits',
+    image: blogImage6,
+    date: '19 March 2022',
+    title: '10 ways React stands out from alternatives',
+    tags: ['Startup', 'Team', 'CIO'],
+    author: 'Scott McCoy',
+    viewsAmount: 6432,
+    category: 'Information security',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: 'burnout-and-programming',
+    image: blogImage7,
+    date: '15 July 2022',
+    title: '4 tips for overcoming burnout in programming',
+    tags: ['App', 'CIO', 'Future'],
+    author: 'Ronald McGary',
+    viewsAmount: 732,
+    category: 'Internet of things',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: 'device-problems',
+    image: blogImage8,
+    date: '14 February 2022',
+    title: '5 problems with device you may not see coming',
+    tags: ['Big data', 'Information security'],
+    author: 'Carmen Newby',
+    viewsAmount: 924,
+    category: 'Healthcare it',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: 'react-and-angular',
+    image: blogImage9,
+    date: '29 September 2022',
+    title: 'React/Angular: a candid review for 2022',
+    tags: ['Future', 'Information security'],
+    author: 'Bertha Palacios',
+    viewsAmount: 481,
+    category: 'Software development',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: 'staffing-software',
+    image: blogImage10,
+    date: '22 October 2022',
     title: 'Staffing software: key capabilities and top products',
     tags: ['App', 'Management', 'Media'],
     author: 'Randall Harrison',
     viewsAmount: 378,
     category: 'Information security',
-    text: [
-      `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Nulla rhoncus consectetur eros non iaculis “Vivamus lectus enim, convallis nec dapibus vel, semper id ante. Morbi pulvinar sapien nulla, eu dignissim enim ullamcorper vitae”. 
-    \nUt sit amet neque vel mauris consequat aliquam at in arcu. Ut vulputate, augue luctus dignissim pretium, elit magna placerat elit, at venenatis lacus arcu eget quam. Fusce nec cursus mi, sed blandit. 
-    \nPhasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliq uam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. Praesent mollis velit ac accumsan ultrices. Ut convallis ipsum pulvinar ante maximus suscipit.`,
-      `“Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero”`,
-      `Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, eu euismod augue bibendum. In volutpat libero velit, et mattis tortor placerat eget.
-  \nUt nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Sed placerat, ligula vel tempor pellentesque, odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam. `,
-    ],
+    previewText: blogCardPreviewText,
+    text: blogCardText,
   },
   {
-    id: 'staffing-software-3',
-    image: blogImage3,
-    date: '22 June 2022',
-    title: 'Staffing software: key capabilities and top products',
-    tags: ['App', 'CIO', 'Future'],
+    id: 'laptop-costs-in-2022',
+    image: blogImage11,
+    date: '22 November 2022',
+    title: 'Everything you need to know about laptop costs in 2022',
+    tags: ['Data', 'Future', 'Startup'],
     author: 'Sharon Perez',
     viewsAmount: 3729,
     category: 'Digital transformation',
-    text: [
-      `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Nulla rhoncus consectetur eros non iaculis “Vivamus lectus enim, convallis nec dapibus vel, semper id ante. Morbi pulvinar sapien nulla, eu dignissim enim ullamcorper vitae”. 
-    \nUt sit amet neque vel mauris consequat aliquam at in arcu. Ut vulputate, augue luctus dignissim pretium, elit magna placerat elit, at venenatis lacus arcu eget quam. Fusce nec cursus mi, sed blandit. 
-    \nPhasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliq uam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. Praesent mollis velit ac accumsan ultrices. Ut convallis ipsum pulvinar ante maximus suscipit.`,
-      `“Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero”`,
-      `Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, eu euismod augue bibendum. In volutpat libero velit, et mattis tortor placerat eget.
-  \nUt nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Sed placerat, ligula vel tempor pellentesque, odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam. `,
-    ],
+    previewText: blogCardPreviewText,
+    text: blogCardText,
   },
   {
-    id: 'staffing-software-4',
-    image: blogImage4,
-    date: '22 June 2022',
-    title: 'Staffing software: key capabilities and top products',
-    tags: ['App', 'CIO', 'Future'],
+    id: 'tesla-customers',
+    image: blogImage12,
+    date: '19 November 2022',
+    title: 'Tesla: what real customers have to say',
+    tags: ['CIO', 'Future', 'Proxy'],
     author: 'Mary Koster',
     viewsAmount: 1004,
     category: 'Healthcare it',
-    text: [
-      `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Nulla rhoncus consectetur eros non iaculis “Vivamus lectus enim, convallis nec dapibus vel, semper id ante. Morbi pulvinar sapien nulla, eu dignissim enim ullamcorper vitae”. 
-    \nUt sit amet neque vel mauris consequat aliquam at in arcu. Ut vulputate, augue luctus dignissim pretium, elit magna placerat elit, at venenatis lacus arcu eget quam. Fusce nec cursus mi, sed blandit. 
-    \nPhasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliq uam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. Praesent mollis velit ac accumsan ultrices. Ut convallis ipsum pulvinar ante maximus suscipit.`,
-      `“Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero”`,
-      `Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, eu euismod augue bibendum. In volutpat libero velit, et mattis tortor placerat eget.
-  \nUt nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Sed placerat, ligula vel tempor pellentesque, odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam. `,
-    ],
+    previewText: blogCardPreviewText,
+    text: blogCardText,
   },
   {
-    id: 'staffing-software',
-    image: blogImage1,
-    date: '22 June 2022',
-    title: 'Staffing software: key capabilities and top products',
-    tags: ['App', 'CIO', 'Future'],
+    id: 'hype-arond-swift',
+    image: blogImage13,
+    date: '29 January 2022',
+    title: 'Does Swift really live up to the hype?',
+    tags: ['CMR', 'CIO', 'Team'],
     author: 'Lance Piggott',
     viewsAmount: 296,
     category: 'Software development',
-    text: [
-      `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Nulla rhoncus consectetur eros non iaculis “Vivamus lectus enim, convallis nec dapibus vel, semper id ante. Morbi pulvinar sapien nulla, eu dignissim enim ullamcorper vitae”. 
-    \nUt sit amet neque vel mauris consequat aliquam at in arcu. Ut vulputate, augue luctus dignissim pretium, elit magna placerat elit, at venenatis lacus arcu eget quam. Fusce nec cursus mi, sed blandit. 
-    \nPhasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliq uam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. Praesent mollis velit ac accumsan ultrices. Ut convallis ipsum pulvinar ante maximus suscipit.`,
-      `“Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero”`,
-      `Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, eu euismod augue bibendum. In volutpat libero velit, et mattis tortor placerat eget.
-  \nUt nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Sed placerat, ligula vel tempor pellentesque, odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam. `,
-    ],
+    previewText: blogCardPreviewText,
+    text: blogCardText,
   },
   {
-    id: 'staffing-software',
-    image: blogImage2,
-    date: '22 June 2022',
-    title: 'Staffing software: key capabilities and top products',
-    tags: ['App', 'CIO', 'Future'],
+    id: 'Business-cost',
+    image: blogImage14,
+    date: '27 February 2022',
+    title: 'How much does business cost and is it worth it?',
+    tags: ['App', 'Startup', 'Future'],
     author: 'Scott McCoy',
     viewsAmount: 6432,
     category: 'Information security',
-    text: [
-      `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Nulla rhoncus consectetur eros non iaculis “Vivamus lectus enim, convallis nec dapibus vel, semper id ante. Morbi pulvinar sapien nulla, eu dignissim enim ullamcorper vitae”. 
-    \nUt sit amet neque vel mauris consequat aliquam at in arcu. Ut vulputate, augue luctus dignissim pretium, elit magna placerat elit, at venenatis lacus arcu eget quam. Fusce nec cursus mi, sed blandit. 
-    \nPhasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliq uam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. Praesent mollis velit ac accumsan ultrices. Ut convallis ipsum pulvinar ante maximus suscipit.`,
-      `“Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero”`,
-      `Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, eu euismod augue bibendum. In volutpat libero velit, et mattis tortor placerat eget.
-  \nUt nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Sed placerat, ligula vel tempor pellentesque, odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam. `,
-    ],
+    previewText: blogCardPreviewText,
+    text: blogCardText,
   },
   {
-    id: 'staffing-software',
-    image: blogImage3,
-    date: '22 June 2022',
-    title: 'Staffing software: key capabilities and top products',
-    tags: ['App', 'CIO', 'Future'],
+    id: 'successful-businesses',
+    image: blogImage15,
+    date: '11 October 2022',
+    title: 'Successful businesses of the future',
+    tags: ['CMR', 'CIO', 'Big data'],
     author: 'Ronald McGary',
     viewsAmount: 732,
     category: 'Internet of things',
-    text: [
-      `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Nulla rhoncus consectetur eros non iaculis “Vivamus lectus enim, convallis nec dapibus vel, semper id ante. Morbi pulvinar sapien nulla, eu dignissim enim ullamcorper vitae”. 
-    \nUt sit amet neque vel mauris consequat aliquam at in arcu. Ut vulputate, augue luctus dignissim pretium, elit magna placerat elit, at venenatis lacus arcu eget quam. Fusce nec cursus mi, sed blandit. 
-    \nPhasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliq uam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. Praesent mollis velit ac accumsan ultrices. Ut convallis ipsum pulvinar ante maximus suscipit.`,
-      `“Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero”`,
-      `Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, eu euismod augue bibendum. In volutpat libero velit, et mattis tortor placerat eget.
-  \nUt nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Sed placerat, ligula vel tempor pellentesque, odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam. `,
-    ],
+    previewText: blogCardPreviewText,
+    text: blogCardText,
   },
   {
-    id: 'staffing-software',
-    image: blogImage4,
-    date: '22 June 2022',
-    title: 'Staffing software: key capabilities and top products',
-    tags: ['App', 'CIO', 'Future'],
+    id: 'software-development-trends',
+    image: blogImage16,
+    date: '26 May 2022',
+    title: '2022 software development trends',
+    tags: ['CMR', 'Proxy', 'Data'],
     author: 'Carmen Newby',
     viewsAmount: 924,
     category: 'Healthcare it',
-    text: [
-      `At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. Nulla rhoncus consectetur eros non iaculis “Vivamus lectus enim, convallis nec dapibus vel, semper id ante. Morbi pulvinar sapien nulla, eu dignissim enim ullamcorper vitae”. 
-    \nUt sit amet neque vel mauris consequat aliquam at in arcu. Ut vulputate, augue luctus dignissim pretium, elit magna placerat elit, at venenatis lacus arcu eget quam. Fusce nec cursus mi, sed blandit. 
-    \nPhasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliq uam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero. Praesent mollis velit ac accumsan ultrices. Ut convallis ipsum pulvinar ante maximus suscipit.`,
-      `“Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula id, lacinia auctor orci. Sed quis lobortis eros. Fusce id commodo libero”`,
-      `Mauris purus diam, iaculis non leo nec, ultricies fringilla odio. Fusce feugiat elit facilisis volutpat venenatis. Vestibulum tempor ligula vel orci consectetur, eu euismod augue bibendum. In volutpat libero velit, et mattis tortor placerat eget.
-  \nUt nec aliquam urna, et varius massa. Praesent eu nisl ac ex maximus iaculis. Sed placerat, ligula vel tempor pellentesque, odio ipsum lobortis orci, sit amet fermentum ex nunc ac diam. `,
-    ],
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: '5-web-portals-for-your-bussines',
+    image: blogImage17,
+    date: '27 June 2022',
+    title: '5 web portal your business can learn from',
+    tags: ['CMR', 'Future'],
+    author: 'Carmen Newby',
+    viewsAmount: 924,
+    category: 'Healthcare it',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
+  },
+  {
+    id: 'compliance-of-medical-devices',
+    image: blogImage18,
+    date: '13 June 2022',
+    title: 'ISO 13485 compliance of medical devices',
+    tags: ['Team', 'CIO', 'Future'],
+    author: 'Carmen Newby',
+    viewsAmount: 924,
+    category: 'Healthcare it',
+    previewText: blogCardPreviewText,
+    text: blogCardText,
   },
 ];

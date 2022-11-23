@@ -13,19 +13,21 @@ import { ReactComponent as DataLineIcon } from '@/assets/icons/data-line.svg';
 import { ReactComponent as ShareIcon } from '@/assets/icons/share.svg';
 import { ReactComponent as TagIcon } from '@/assets/icons/tag.svg';
 import { v4 as getId } from 'uuid';
+import { ImageWrapper } from './styled';
+import { RelatedPosts } from '../RelatedPosts';
+import { IPostCard } from '@/types';
+import { useMediaQuery } from 'react-responsive';
 
-export const Article = ({
-  date,
-  author,
-  image,
-  viewsAmount,
-  tags,
-  text,
-}: ArticleProps) => {
+export const Article = (post: IPostCard) => {
+  const { image, date, author, text, viewsAmount, tags } = post;
+  const isLaptopOrTablet = useMediaQuery({ query: '(max-width: 1024px)' });
+
   return (
     <ArticleContainer>
       <PreviewImageWrapper>
-        <img src={image} alt='Article image' title='Article image' />
+        <ImageWrapper>
+          <img src={image} alt='Article image' title='Article image' />
+        </ImageWrapper>
         <InfoBlock>
           <div>
             <CalendarIcon style={blogIconStyles} />
@@ -38,7 +40,7 @@ export const Article = ({
         </InfoBlock>
       </PreviewImageWrapper>
       <TextWrapper>
-        {text.map((item) => (
+        {post.text.map((item) => (
           <p key={getId()}>{item}</p>
         ))}
       </TextWrapper>
@@ -54,9 +56,12 @@ export const Article = ({
         <div>
           <TagIcon style={blogIconStyles} />
           <h6>Tags:</h6>
-          {tags.map((tag) => <span key={getId()}>{tag}</span>)}
+          {tags.map((tag) => (
+            <span key={getId()}>{tag}</span>
+          ))}
         </div>
       </InfoBlock>
+      {!isLaptopOrTablet && <RelatedPosts {...post} />}
     </ArticleContainer>
   );
 };

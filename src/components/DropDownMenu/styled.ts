@@ -6,6 +6,8 @@ import theme from '@/theme';
 import { ToggleProps } from '@/types';
 
 export const DropDownMenuContainer = styled.div<ToggleProps>`
+  width: 100%;
+  height: 100%;
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -89,6 +91,7 @@ export const DropDownMenuContainer = styled.div<ToggleProps>`
 `;
 
 export const DropDownList = styled.ul`
+  width: 100%;
   display: none;
   position: absolute;
   top: 100%;
@@ -104,10 +107,11 @@ export const DropDownList = styled.ul`
   }
 
   li {
+    width: 100%;
     display: none;
     color: white;
     background-color: ${theme.colors.secondary};
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     font-size: 16px;
     opacity: 0;
 
@@ -123,7 +127,10 @@ export const DropDownList = styled.ul`
       border-radius: 0 0 16px 16px;
     }
 
-    a {
+    & > a {
+      padding: 10px 20px;
+      width: 100%;
+      display: block;
       color: inherit;
       text-decoration: none;
     }

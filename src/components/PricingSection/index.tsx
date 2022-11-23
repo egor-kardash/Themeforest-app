@@ -15,8 +15,6 @@ import 'swiper/css/scrollbar';
 import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import './styles.css';
-
 export const PricingSection = () => {
   return (
     <PricingContainer>

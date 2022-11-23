@@ -6,11 +6,20 @@ export const SolutionDescriptionContainer = styled.section`
   max-width: 1141px;
   width: 100%;
   padding: 0 16px;
-  margin: 0 auto;
-  margin-bottom: 120px;
+  margin: 0 auto calc(50px + 70 * (100vw / 1920));
   display: flex;
   flex-flow: row nowrap;
   gap: 126px;
+
+  white-space: pre-line;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: calc(50px + (70 + 70 * 0.7) * ((100vw - 360px) / 1920));
+  }
 `;
 
 export const ContentList = styled.div`
@@ -18,38 +27,81 @@ export const ContentList = styled.div`
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-  gap: 70px;
+  gap: calc(40px + 30 * (100vw / 1920));
+
+  @media (max-width: 768px) {
+    gap: calc(40px + (30 + 30 * 0.7) * ((100vw - 360px) / 1920));
+  }
 `;
 
 export const ContentItem = styled.div`
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-  gap: 30px;
+  gap: calc(20px + 10 * (100vw / 1920));
 
   h2 {
     font-weight: 800;
-    font-size: 38px;
-    line-height: 56px;
+    font-size: calc(22px + 16 * (100vw / 1920));
+    line-height: calc(33px + 23 * (100vw / 1920));
     color: ${theme.colors.black};
   }
 
-  p {
+  p,
+  li {
     font-family: 'Open Sans';
-    font-size: 20px;
-    line-height: 33px;
+    font-size: calc(14px + 6 * (100vw / 1920));
+    line-height: calc(24px + 9 * (100vw / 1920));
     color: ${theme.colors.grey};
+  }
+
+  & > ul {
+    display: flex;
+    flex-flow: column wrap;
+    list-style-type: disc;
+    list-style-position: revert;
+    gap: 25px;
+
+    li {
+      margin-left: 1em;
+    }
+
+    li::marker {
+      font-size: 24px;
+      color: ${theme.colors.black};
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: calc(20px + (10 + 10 * 0.7) * ((100vw - 360px) / 1920));
+
+    p,
+    li {
+      font-size: calc(14px + (6 + 6 * 0.7) * ((100vw - 360px) / 1920));
+      line-height: calc(24px + (9 + 9 * 0.7) * ((100vw - 360px) / 1920));
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: calc(22px + (16 + 16 * 0.7) * ((100vw - 360px) / 1920));
+      line-height: calc(33px + (23 + 23 * 0.7) * ((100vw - 360px) / 1920));
+    }
   }
 `;
 
 export const ImageWrapper = styled.div`
+  position: relative;
   width: 100%;
-  max-height: 250px;
-  overflow: hidden;
-  border-radius: 6px;
+  height: 0;
+  padding-top: calc(100% * (100 / 180));
 
   img {
+    position: absolute;
+    top: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 6px;
   }
 `;
@@ -76,10 +128,9 @@ export const Tab = styled.div`
   /* padding: 18px 30px 18px 0; */
   gap: 30px;
 
-  a:visited,
-  a:hover,
-  a:active {
+  & > a {
     color: inherit;
+    text-decoration: none;
   }
 
   a {

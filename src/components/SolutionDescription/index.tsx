@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import { v4 as getId } from 'uuid';
 
@@ -13,15 +14,19 @@ import {
 import { SolutionDescriptionProps } from './types';
 
 export const SolutionDescription = ({ content }: SolutionDescriptionProps) => {
+  const isDesktopOrTablet = useMediaQuery({ query: '(max-width: 1024px)' });
+
   return (
     <SolutionDescriptionContainer>
-      <SideBar>
-        {content.map((item) => (
-          <Tab key={getId()}>
-            <a href={`#${item.id}`}>{item.title}</a>
-          </Tab>
-        ))}
-      </SideBar>
+      {!isDesktopOrTablet && (
+        <SideBar>
+          {content.map((item) => (
+            <Tab key={getId()}>
+              <a href={`#${item.id}`}>{item.title}</a>
+            </Tab>
+          ))}
+        </SideBar>
+      )}
       <ContentList>
         {content.map((item) => {
           return (
@@ -30,13 +35,20 @@ export const SolutionDescription = ({ content }: SolutionDescriptionProps) => {
               {item.image && (
                 <ImageWrapper>
                   <img
-                    src={item.image}
+                    src={item.image}  
                     alt='Paragraph image'
                     title={`${item.title} image`}
                   />
                 </ImageWrapper>
               )}
               <p>{item.description}</p>
+              {item.typeList && (
+                <ul>
+                  {item.typeList.map((type) => (
+                    <li key={getId()}>{type}</li>
+                  ))}
+                </ul>
+              )}
             </ContentItem>
           );
         })}

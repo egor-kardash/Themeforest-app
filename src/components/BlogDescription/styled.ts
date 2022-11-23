@@ -11,14 +11,22 @@ export const BlogDescriptionContainer = styled.section`
   padding: 0 16px;
   margin: 0 auto calc(50px + 70 * (100vw / 1920));
   display: grid;
-  grid-template: 'article side-bar' / 55% auto;
+  grid-template: 'article side-bar' / 57% auto;
   gap: 30px;
 
-  h4 {
+  & > h4 {
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
     color: ${theme.colors.black};
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 800px;
+
+    grid-template:
+      'article'
+      'side-bar' / 1fr;
   }
 
   @media (max-width: 768px) {

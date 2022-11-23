@@ -32,7 +32,7 @@ export const TestimonialsSection = () => {
         modules={[Navigation]}
         className='shadows-swiper'
         breakpoints={{
-          '560': {
+          '640': {
             slidesPerView: 2,
             spaceBetween: 20,
           },
