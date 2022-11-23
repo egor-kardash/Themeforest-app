@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Paths } from '@/constants';
 
+import { ReadMoreLink } from '../ReadMoreLink';
 import { SolutionsCardContainer } from './styled';
 import { SolutionsCardProps } from './types';
-import { ReadMoreLink } from '../ReadMoreLink';
 
 export const SolutionsCard = ({
   id,

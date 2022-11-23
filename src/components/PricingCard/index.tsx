@@ -1,12 +1,14 @@
-import { getAnnualPrice } from '@/helpers';
-import { useToggle } from '@/hooks/useToggle';
 import React, { useState } from 'react';
 
 import { v4 as getId } from 'uuid';
+
+import { getAnnualPrice } from '@/helpers';
+import { useToggle } from '@/hooks/useToggle';
+
+
 import { Modal } from '../Modal';
 import { Payment } from '../Payment';
 import { Video } from '../Video';
-
 import {
   ChoosePlanButton,
   PriceToggler,

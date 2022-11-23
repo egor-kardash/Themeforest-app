@@ -1,15 +1,19 @@
+import { useMediaQuery } from 'react-responsive';
+import { v4 as getId } from 'uuid';
+
 import { allTags } from '@/constants/blogPageData';
+import { IPostCard } from '@/types';
+
 import { Article } from '../ArticleSection';
+import { PopularPosts } from '../PopularPosts';
 import { SearchBar } from '../SearchBar';
 import { BlogDescriptionContainer, SideBar, TagsBar } from './styled';
 import { BlogDescriptionProps } from './types';
-import { v4 as getId } from 'uuid';
-import { PopularPosts } from '../PopularPosts';
-import { useMediaQuery } from 'react-responsive';
-import { IPostCard } from '@/types';
+
+
 
 export const BlogDescription = (post: IPostCard) => {
-  const isLaptopOrTablet = useMediaQuery({ query: '(max-width: 1024px)' })
+  const isLaptopOrTablet = useMediaQuery({ query: '(max-width: 1024px)' });
 
   return (
     <BlogDescriptionContainer>

@@ -1,12 +1,19 @@
 import React from 'react';
-import { ControlsDirection } from '../ControlsDirection';
-import { BlogSectionContainer, LearnMoreButton, TittleControllerWrapper } from './styled';
+
 import { useMediaQuery } from 'react-responsive';
-import { BlogCardSwiper } from '../BlogCardSwiper';
 import { v4 as getId } from 'uuid';
-import { blogCardList } from '@/constants/blogPageData';
-import { PopularPostCard } from '../PopularPostCard';
+
 import { Paths } from '@/constants';
+import { blogCardList } from '@/constants/blogPageData';
+
+import { BlogCardSwiper } from '../BlogCardSwiper';
+import { ControlsDirection } from '../ControlsDirection';
+import { PopularPostCard } from '../PopularPostCard';
+import {
+  BlogSectionContainer,
+  LearnMoreButton,
+  TittleControllerWrapper,
+} from './styled';
 
 export const BlogSection = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });

@@ -5,4 +5,4 @@ export type ArticleProps = {
   viewsAmount: number;
   text: string[];
   tags: string[];
-}
+};

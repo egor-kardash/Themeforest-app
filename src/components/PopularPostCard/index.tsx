@@ -1,5 +1,6 @@
 import { Paths } from '@/constants';
 import { BlogPostProps, IPostCard } from '@/types';
+
 import { ReadMoreLink } from '../ReadMoreLink';
 import { ImageWrapper, PopularPostCardContainer } from './styled';
 

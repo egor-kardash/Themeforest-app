@@ -1,7 +1,10 @@
-import { paymentSchema } from '@/schemas';
-import { useFormik } from 'formik';
 import { useRef, useState } from 'react';
+
+import { useFormik } from 'formik';
 import Card from 'react-credit-cards';
+
+import { paymentSchema } from '@/schemas';
+
 import 'react-credit-cards/es/styles-compiled.css';
 import { PaymentForm } from './styled';
 

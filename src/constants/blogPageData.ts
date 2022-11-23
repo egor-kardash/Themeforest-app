@@ -1,12 +1,4 @@
 import blogImage1 from '@/assets/images/blog/blog-image-1.jpg';
-import blogImage2 from '@/assets/images/blog/blog-image-2.jpg';
-import blogImage3 from '@/assets/images/blog/blog-image-3.jpg';
-import blogImage4 from '@/assets/images/blog/blog-image-4.jpg';
-import blogImage5 from '@/assets/images/blog/blog-image-5.jpg';
-import blogImage6 from '@/assets/images/blog/blog-image-6.jpg';
-import blogImage7 from '@/assets/images/blog/blog-image-7.jpg';
-import blogImage8 from '@/assets/images/blog/blog-image-8.jpg';
-import blogImage9 from '@/assets/images/blog/blog-image-9.jpg';
 import blogImage10 from '@/assets/images/blog/blog-image-10.jpg';
 import blogImage11 from '@/assets/images/blog/blog-image-11.jpg';
 import blogImage12 from '@/assets/images/blog/blog-image-12.jpg';
@@ -16,6 +8,14 @@ import blogImage15 from '@/assets/images/blog/blog-image-15.jpg';
 import blogImage16 from '@/assets/images/blog/blog-image-16.jpg';
 import blogImage17 from '@/assets/images/blog/blog-image-17.jpg';
 import blogImage18 from '@/assets/images/blog/blog-image-18.jpg';
+import blogImage2 from '@/assets/images/blog/blog-image-2.jpg';
+import blogImage3 from '@/assets/images/blog/blog-image-3.jpg';
+import blogImage4 from '@/assets/images/blog/blog-image-4.jpg';
+import blogImage5 from '@/assets/images/blog/blog-image-5.jpg';
+import blogImage6 from '@/assets/images/blog/blog-image-6.jpg';
+import blogImage7 from '@/assets/images/blog/blog-image-7.jpg';
+import blogImage8 from '@/assets/images/blog/blog-image-8.jpg';
+import blogImage9 from '@/assets/images/blog/blog-image-9.jpg';
 
 export const allTags = [
   'All topics',

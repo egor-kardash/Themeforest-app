@@ -3,4 +3,4 @@ export type RelatedPostCardProps = {
   date: string;
   title: string;
   previewText: string;
-}
+};

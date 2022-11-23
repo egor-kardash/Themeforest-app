@@ -7,4 +7,4 @@ export type BlogDescriptionProps = {
   viewsAmount: number;
   text: string[];
   tags: string[];
-}
+};

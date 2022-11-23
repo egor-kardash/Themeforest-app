@@ -1,10 +1,10 @@
 import { useHistory, useParams } from 'react-router-dom';
 
+import { BlogDescription } from '@/components/BlogDescription';
 import { HeadlineSinglePage } from '@/components/HeadlineSinglePage';
 import { Subscribe } from '@/components/Subscribe';
 import { Paths } from '@/constants';
 import { blogCardList } from '@/constants/blogPageData';
-import { BlogDescription } from '@/components/BlogDescription';
 
 export const SingleBlog = () => {
   const { id } = useParams<{ id: string }>();
@@ -20,7 +20,7 @@ export const SingleBlog = () => {
   return (
     <>
       <HeadlineSinglePage title={currentBlog.title} />
-      <BlogDescription {...currentBlog}/>
+      <BlogDescription {...currentBlog} />
       <Subscribe />
     </>
   );

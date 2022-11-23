@@ -1,9 +1,10 @@
 import { IPostCard } from '@/types';
+
 import { ImageWrapper, RelatedPostCardContainer } from './styled';
 import { RelatedPostCardProps } from './types';
 
 export const RelatedPostCard = (post: IPostCard) => {
-  const {image, date, title, previewText} = post;
+  const { image, date, title, previewText } = post;
 
   return (
     <RelatedPostCardContainer>

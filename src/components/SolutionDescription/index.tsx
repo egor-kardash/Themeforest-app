@@ -1,6 +1,6 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 
+import { useMediaQuery } from 'react-responsive';
 import { v4 as getId } from 'uuid';
 
 import {
@@ -35,7 +35,7 @@ export const SolutionDescription = ({ content }: SolutionDescriptionProps) => {
               {item.image && (
                 <ImageWrapper>
                   <img
-                    src={item.image}  
+                    src={item.image}
                     alt='Paragraph image'
                     title={`${item.title} image`}
                   />

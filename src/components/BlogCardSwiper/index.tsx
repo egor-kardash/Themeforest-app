@@ -2,11 +2,13 @@ import { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { HeaderBlogCard } from '../HeaderBlogCard';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { blogCardList } from '@/constants/blogPageData';
+
 import { v4 as getId } from 'uuid';
 
 export const BlogCardSwiper = () => (

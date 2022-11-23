@@ -1,9 +1,8 @@
-import styled from "styled-components";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 import arrowRight from '@/assets/icons/arrow-right.svg';
-
-import theme from "@/theme";
-import { Link } from "react-router-dom";
+import theme from '@/theme';
 
 export const StyledLink = styled(Link)`
   text-decoration: none;

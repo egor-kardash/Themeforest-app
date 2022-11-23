@@ -1,16 +1,23 @@
-import { BlogPostProps, IPostCard } from '@/types';
 import { useEffect, useState } from 'react';
+
+import { v4 as getId } from 'uuid';
+
+import { blogCardList } from '@/constants/blogPageData';
+import { BlogPostProps, IPostCard } from '@/types';
+
 import { PopularPostCard } from '../PopularPostCard';
 import { PopularPostsContainer } from './styles';
-import {v4 as getId} from 'uuid';
-import { blogCardList } from '@/constants/blogPageData';
+
+
 
 export const PopularPosts = () => {
   const [posts, setPosts] = useState<IPostCard[]>([]);
 
   useEffect(() => {
-    setPosts(blogCardList.sort((a, b) => b.viewsAmount - a.viewsAmount).slice(0, 4))
-  }, [])
+    setPosts(
+      blogCardList.sort((a, b) => b.viewsAmount - a.viewsAmount).slice(0, 4),
+    );
+  }, []);
 
   return (
     <PopularPostsContainer>

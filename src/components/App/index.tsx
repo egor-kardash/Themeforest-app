@@ -4,6 +4,7 @@ import { v4 as getId } from 'uuid';
 import { Header } from '@/components/Header';
 import { WrappedRoute } from '@/components/WrappedRoute';
 import { Paths, routes } from '@/constants';
+
 import { Footer } from '../Footer';
 
 export const App = () => {

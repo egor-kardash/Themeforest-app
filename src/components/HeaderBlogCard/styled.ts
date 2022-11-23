@@ -53,4 +53,3 @@ export const ImageWrapper = styled.div`
     border-radius: 6px;
   }
 `;
-

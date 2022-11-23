@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Paths } from '@/constants';
 
+import { ReadMoreLink } from '../ReadMoreLink';
 import { HeaderBlogCardContainer, ImageWrapper, TextWrapper } from './styled';
 import { HeaderBlogCardProps } from './types';
-import { ReadMoreLink } from '../ReadMoreLink';
 
 export const HeaderBlogCard = ({
   id,

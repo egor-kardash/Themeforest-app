@@ -1,3 +1,15 @@
+import { useMediaQuery } from 'react-responsive';
+import { v4 as getId } from 'uuid';
+
+import { ReactComponent as CalendarIcon } from '@/assets/icons/calendar.svg';
+import { ReactComponent as DataLineIcon } from '@/assets/icons/data-line.svg';
+import { ReactComponent as PersonIcon } from '@/assets/icons/person.svg';
+import { ReactComponent as ShareIcon } from '@/assets/icons/share.svg';
+import { ReactComponent as TagIcon } from '@/assets/icons/tag.svg';
+import { IPostCard } from '@/types';
+
+import { RelatedPosts } from '../RelatedPosts';
+import { ImageWrapper } from './styled';
 import {
   ArticleContainer,
   blogIconStyles,
@@ -7,16 +19,6 @@ import {
 } from './styled';
 import { ArticleProps } from './types';
 
-import { ReactComponent as CalendarIcon } from '@/assets/icons/calendar.svg';
-import { ReactComponent as PersonIcon } from '@/assets/icons/person.svg';
-import { ReactComponent as DataLineIcon } from '@/assets/icons/data-line.svg';
-import { ReactComponent as ShareIcon } from '@/assets/icons/share.svg';
-import { ReactComponent as TagIcon } from '@/assets/icons/tag.svg';
-import { v4 as getId } from 'uuid';
-import { ImageWrapper } from './styled';
-import { RelatedPosts } from '../RelatedPosts';
-import { IPostCard } from '@/types';
-import { useMediaQuery } from 'react-responsive';
 
 export const Article = (post: IPostCard) => {
   const { image, date, author, text, viewsAmount, tags } = post;

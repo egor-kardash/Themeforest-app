@@ -1,15 +1,15 @@
-import solutionTypesImage1 from '@/assets/images/solution/solution-types-image-1.jpg';
-import solutionTypesImage2 from '@/assets/images/solution/solution-types-image-2.jpg';
-import solutionTypesImage3 from '@/assets/images/solution/solution-types-image-3.jpg';
-import solutionTypesImage4 from '@/assets/images/solution/solution-types-image-4.jpg';
-import solutionTypesImage5 from '@/assets/images/solution/solution-types-image-5.jpg';
-import solutionTypesImage6 from '@/assets/images/solution/solution-types-image-6.jpg';
 import solutionPracticeImage1 from '@/assets/images/solution/solution-practice-image-1.jpg';
 import solutionPracticeImage2 from '@/assets/images/solution/solution-practice-image-2.jpg';
 import solutionPracticeImage3 from '@/assets/images/solution/solution-practice-image-3.jpg';
 import solutionPracticeImage4 from '@/assets/images/solution/solution-practice-image-4.jpg';
 import solutionPracticeImage5 from '@/assets/images/solution/solution-practice-image-5.jpg';
 import solutionPracticeImage6 from '@/assets/images/solution/solution-practice-image-6.jpg';
+import solutionTypesImage1 from '@/assets/images/solution/solution-types-image-1.jpg';
+import solutionTypesImage2 from '@/assets/images/solution/solution-types-image-2.jpg';
+import solutionTypesImage3 from '@/assets/images/solution/solution-types-image-3.jpg';
+import solutionTypesImage4 from '@/assets/images/solution/solution-types-image-4.jpg';
+import solutionTypesImage5 from '@/assets/images/solution/solution-types-image-5.jpg';
+import solutionTypesImage6 from '@/assets/images/solution/solution-types-image-6.jpg';
 
 export const pageDataList = [
   {

@@ -36,7 +36,7 @@ export const Features = () => {
         <ImageWrapper>
           <img src={features2Image} />
         </ImageWrapper>
-        
+
         {/* <SecondBlockHeadline> */}
         <h2>Radically new solutions for data</h2>
         <TextButtonWrapper>
